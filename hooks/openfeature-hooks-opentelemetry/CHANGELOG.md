@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.3.0](https://github.com/ResalApps/openfeature-python-sdk/compare/openfeature-hooks-opentelemetry/v0.2.0...openfeature-hooks-opentelemetry/v0.3.0) (2025-08-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Python 3.8 support ([#187](https://github.com/ResalApps/openfeature-python-sdk/issues/187))
+
+### chore
+
+* drop Python 3.8 support ([#187](https://github.com/ResalApps/openfeature-python-sdk/issues/187)) ([b55cc1e](https://github.com/ResalApps/openfeature-python-sdk/commit/b55cc1e0f823d05a330c12af6861dbd3bec69c3a))
+
+
+### 🐛 Bug Fixes
+
+* fix types for hints in OTel TracingHook ([#73](https://github.com/ResalApps/openfeature-python-sdk/issues/73)) ([24260fb](https://github.com/ResalApps/openfeature-python-sdk/commit/24260fb519d18590d82e9aae1cf824b9e6ca7f17))
+* remove modifications to license files ([#81](https://github.com/ResalApps/openfeature-python-sdk/issues/81)) ([a23f61e](https://github.com/ResalApps/openfeature-python-sdk/commit/a23f61e1c14c70e45a4bce4a014d5599813f1d28))
+
+
+### ✨ New Features
+
+* migrate to uv ([#293](https://github.com/ResalApps/openfeature-python-sdk/issues/293)) ([9590554](https://github.com/ResalApps/openfeature-python-sdk/commit/9590554be4c8a7f77b0c0f20d6b48076c9870f52))
+
 ## [0.2.0](https://github.com/open-feature/python-sdk-contrib/compare/openfeature-hooks-opentelemetry/v0.1.3...openfeature-hooks-opentelemetry/v0.2.0) (2025-02-21)
 
 
