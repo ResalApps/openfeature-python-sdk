@@ -22,7 +22,8 @@ permissions:
 
 jobs:
   changes:
-    runs-on: ubuntu-latest
+    runs-on: resal-arc
+    timeout-minutes: 30
     permissions:
       pull-requests: read # needed for `dorny/paths-filter`
     outputs:
@@ -46,7 +47,8 @@ jobs:
 
   build:
     needs: changes
-    runs-on: ubuntu-latest
+    runs-on: resal-arc
+    timeout-minutes: 30
     strategy:
       matrix:
         python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
@@ -89,7 +91,8 @@ jobs:
           token: ${{ secrets.CODECOV_UPLOAD_TOKEN }}
 
   lint:
-    runs-on: ubuntu-latest
+    runs-on: resal-arc
+    timeout-minutes: 30
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -103,7 +106,8 @@ jobs:
         uses: pre-commit/action@2c7b3805fd2a0fd8c1884dcaebf91fc102a13ecd # v3.0.1
 
   sast:
-    runs-on: ubuntu-latest
+    runs-on: resal-arc
+    timeout-minutes: 30
     permissions:
       actions: read
       contents: read
